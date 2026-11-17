@@ -36,7 +36,13 @@ public class Complex {
     public boolean isZero() {
         return real == 0 && imag == 0;
     }
+    public double realPart() {
+        return real;
+    }
 
+    public double imagPart() {
+        return imag;
+    }
     @Override
     public String toString() {
         if (imag == 0) return String.format("%.2f", real);
